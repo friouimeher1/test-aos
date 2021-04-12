@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  testaos:
+    container_name: test-aos
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ".:/testing-aos"
+      - "/testing-aos/node_modules"
+    ports:
+      - 3001:3001
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: npm start

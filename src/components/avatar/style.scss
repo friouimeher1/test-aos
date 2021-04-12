@@ -1,0 +1,29 @@
+.avatar {
+  display: flex;
+  align-items: baseline;
+  .name__user {
+    color: #b92b27;
+    font-weight: bold;
+    font-size: 18;
+  }
+  .img__name {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .avatar__name {
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    height: 30px;
+    overflow: hidden;
+    width: 30px;
+    display: flex;
+    font-size: 20px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+}

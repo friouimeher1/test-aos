@@ -1,0 +1,10 @@
+.modal-dialog {
+  .md-dialog {
+    display: flex;
+    flex-flow: column;
+
+    .md-title--dialog {
+      border-bottom: 1px solid rgba(#000, 0.16);
+    }
+  }
+}

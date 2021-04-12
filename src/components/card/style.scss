@@ -1,0 +1,71 @@
+.note-grid {
+  display: flex;
+  overflow: auto;
+  padding: 8px 16px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #e7e7e7;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #e9e9e9;
+  }
+
+  .note-card {
+    position: relative;
+    border: 2px solid rgba(#000, 0.16);
+    color: #3c3c3c;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    flex: 0 0 5.151515%;
+    width: 300px;
+    margin: 5px;
+    &.checked {
+      border-color: #1979ff;
+    }
+  }
+}
+.actions__btn {
+  display: flex;
+  margin: 2px;
+  .deleteButton {
+    margin-left: auto;
+    padding: 5px;
+    width: 170px;
+  }
+
+  .editButton {
+    margin-left: auto;
+    padding: 5px;
+    width: 170px;
+  }
+
+  .addbutton {
+    width: 170px;
+  }
+}
+.form__add__note,
+.form__edit__note {
+  width: 500px;
+  margin: 0 auto;
+}
